@@ -1,12 +1,12 @@
 import numpy as np
 from scipy.optimize import curve_fit
 
-def bm_energy_eos(v, e0, v0, b0_raw, b0_prime):
+def bm_energy_eos(v, e0, v0, b0, b0_prime):
     """
     Outputs energy in eV when b0_raw is in eV/Å³.
     """
     f = ((v0 / v) ** (2 / 3)) - 1
-    e_term = (9.0 * v0 * b0_raw / 16.0) * (
+    e_term = (9.0 * v0 * b0 / 16.0) * (
         f**3 * b0_prime + f**2 * (6.0 - 4.0 * (v0 / v)**(2 / 3))
     )
     return e0 + e_term
