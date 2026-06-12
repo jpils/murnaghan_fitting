@@ -1,4 +1,4 @@
-pressure,volume,opt_c_a,min_energy,fit_pressures
+pressure(kbar),volume(A^3),opt_c_a(tetragonal),min_energy(eV),fit_pressures(kbar)
 0,239.34,1.419358,-253.409406,0.05694991745337895
 10,238.07,1.419813,-253.402318,10.036400505555372
 20,236.83,1.420272,-253.387745,20.058357691451388
